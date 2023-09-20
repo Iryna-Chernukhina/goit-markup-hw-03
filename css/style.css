@@ -40,10 +40,11 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1470px;
+  max-width: 1158px;
+  padding-right: 15px;
+  padding-left: 15px;
 
   margin: 0 auto;
-  outline: 2px solid red;
 }
 
 /** =========== HEADER ============== */
@@ -135,6 +136,7 @@ img {
 }
 .advantages-container {
   background-color: #2e2f42;
+  justify-content: center;
 }
 .title {
   color: #fff;
@@ -143,7 +145,10 @@ img {
   line-height: 1.07;
   letter-spacing: 1.12px;
   padding-top: 188px;
+  padding-right: 472px;
+
   padding-left: 472px;
+  margin-bottom: 48px;
 }
 .button {
   font-family: "Roboto", sans-serif;
@@ -158,9 +163,11 @@ img {
   cursor: pointer;
   border-radius: 4px;
   margin-top: 48px;
-  margin-left: 635px;
   margin-bottom: 188px;
-  margin-right: 636px;
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
 }
 .button:hover,
 .button:focus {
@@ -177,6 +184,8 @@ img {
   list-style: none;
   display: flex;
   gap: 24px;
+  width: calc((100%-3 * 24px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .advantages-subtitle {
@@ -250,6 +259,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
+  width: calc((100%-3 * 24px) / 4);
 }
 .employee {
   background-color: #ffffff;
@@ -262,6 +272,7 @@ img {
 .portfolio {
   background-color: #fff;
   padding-top: 120px;
+  border-bottom: navy;
 }
 .title-portfolio {
   padding-top: 120px;
@@ -273,6 +284,7 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+  width: calc((100%-4 * 24px) / 4);
 }
 
 .portfolio-img {
