@@ -234,6 +234,7 @@ img {
 }
 .team-img {
   margin-bottom: 32px;
+  width: calc((100%-72px) / 4);
 }
 .title-what {
   font-size: 36px;
@@ -282,7 +283,6 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   text-align: center;
-  width: calc((100%-72px) / 4);
 }
 /** ============================== */
 
