@@ -41,8 +41,8 @@ img {
 .container {
   width: 100%;
   max-width: 1158px;
-  padding-right: 15px;
   padding-left: 15px;
+  padding-right: 15px;
 
   margin: 0 auto;
 }
@@ -55,15 +55,14 @@ img {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
   display: flex;
-
-  padding-left: 156px;
 }
 .nav {
   display: flex;
-  gap: 76px;
+  align-items: center;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -74,13 +73,12 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   line-height: 1.17;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
+  margin-right: 76px;
 }
 .logo-studio {
   color: #2e2f42;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
 }
 
 .page-nav {
@@ -91,12 +89,12 @@ img {
   line-height: 1.5;
   display: flex;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
   margin-right: 332px;
 }
 .address {
   font-style: normal;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .contakts {
   font-size: 16px;
@@ -106,8 +104,6 @@ img {
   list-style: none;
   display: flex;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .studio-item {
@@ -136,19 +132,21 @@ img {
 }
 .advantages-container {
   background-color: #2e2f42;
-  justify-content: center;
+
+  max-width: 1440px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
+
 .title {
   color: #fff;
   font-size: 56px;
   font-style: normal;
   line-height: 1.07;
   letter-spacing: 1.12px;
-  padding-top: 188px;
+  max-width: 496px;
   padding-right: 472px;
-
   padding-left: 472px;
-  margin-bottom: 48px;
 }
 .button {
   font-family: "Roboto", sans-serif;
@@ -162,12 +160,19 @@ img {
   text-align: center;
   cursor: pointer;
   border-radius: 4px;
-  margin-top: 48px;
-  margin-bottom: 188px;
-  display: inline-flex;
-  padding: 16px 32px;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
   align-items: flex-start;
   gap: 10px;
+  margin-top: 48px;
+  margin-right: 635px;
+  margin-left: 636px;
 }
 .button:hover,
 .button:focus {
@@ -179,12 +184,13 @@ img {
 .section-advantages {
   background-color: #fff;
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 .advantages {
   list-style: none;
   display: flex;
   gap: 24px;
-  width: calc((100%-3 * 24px) / 4);
+  width: calc((100%-72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -210,15 +216,16 @@ img {
 
 .section-team {
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 .team-container {
   background-color: #f4f4fd;
   padding-right: 156px;
+  padding-top: 120px;
   padding-bottom: 120px;
   padding-left: 156px;
 }
 .title-team {
-  padding-top: 120px;
   margin-bottom: 72px;
 }
 .team-img {
@@ -259,12 +266,18 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
-  width: calc((100%-3 * 24px) / 4);
+  width: calc((100%-72px) / 4);
 }
 .employee {
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
-
+.team-works {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+  margin-bottom: 8px;
+}
 /** ============================== */
 
 /** ===========PORTFOLIO============ */
@@ -272,11 +285,17 @@ img {
 .portfolio {
   background-color: #fff;
   padding-top: 120px;
+  padding-bottom: 120px;
   border-bottom: navy;
 }
+
 .title-portfolio {
-  padding-top: 120px;
   margin-bottom: 72px;
+}
+.container-portfolio {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .our-portfolio {
   list-style: none;
@@ -284,7 +303,7 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
-  width: calc((100%-4 * 24px) / 4);
+  width: calc((100%-48px) / 3);
 }
 
 .portfolio-img {
@@ -292,6 +311,10 @@ img {
 }
 .subtitle-portfolio {
   margin-bottom: 8px;
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  width: calc((100%-72px) / 4);
 }
 .about-portfolio {
   margin-bottom: 32px;
@@ -302,7 +325,7 @@ img {
 /** ===========FOOTER============ */
 
 .footer {
-  padding-top: 120px;
+  padding: 100px 0;
 }
 .footer-contagner {
   background-color: #2e2f42;
@@ -322,6 +345,8 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .logot {
   color: #f4f4fd;
